@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Handling with JavaScript</title>
+  <style>
+    /* Basic styling for the form and summary section */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .form-section, .summary-section {
+      margin: 20px;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<script src="script.js"></script>
+<body>
+  <div class="form-section">
+    <h1>User Registration Form</h1>
+    <form id="userForm">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
+      <span class="error" id="emailError"></span><br>
+
+      <label for="contact">Preferred Contact Method:</label><br>
+      <input type="radio" id="emailContact" name="contact" value="Email" required>Email
+      <input type="radio" id="phoneContact" name="contact" value="Phone" required>Phone<br><br>
+
+      <label for="terms">I accept the terms and conditions</label>
+      <input type="checkbox" id="terms" name="terms" required><br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="summary-section">
+    <h2>Form Summary</h2>
+    <p id="formSummary">No data submitted yet.</p>
+  </div>
+
+  
+</body>
+</html>
